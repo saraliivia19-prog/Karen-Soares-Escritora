@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Karen Soares - Protótipo</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height:1.5;
+}
+
+.container{
+    width:min(1100px,90%);
+    margin:0 auto;
+}
+
+section{
+    padding:72px 0;
+    border-bottom:1px solid #ddd;
+}
+
+h1,h2,h3{
+    margin-bottom:16px;
+}
+
+p{
+    margin-bottom:16px;
+}
+
+.placeholder{
+    background:#d9d9d9;
+    border-radius:8px;
+}
+
+.hero-image{
+    width:100%;
+    height:320px;
+}
+
+.author-image{
+    width:100%;
+    height:320px;
+}
+
+.book-cover{
+    width:100%;
+    height:260px;
+}
+
+nav{
+    position:sticky;
+    top:0;
+    background:#fff;
+    border-bottom:1px solid #ddd;
+    z-index:1000;
+}
+
+.nav-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:16px 0;
+}
+
+.logo{
+    font-weight:bold;
+}
+
+.menu{
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#000;
+    font-size:14px;
+}
+
+.cta-group{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    margin-top:24px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 18px;
+    border:1px solid #999;
+    text-decoration:none;
+    color:#000;
+    border-radius:6px;
+}
+
+.grid{
+    display:grid;
+    gap:24px;
+}
+
+.grid-2{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.grid-3{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.card{
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.tropes{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:12px;
+}
+
+.tag{
+    padding:6px 10px;
+    border:1px solid #ccc;
+    border-radius:999px;
+    font-size:14px;
+}
+
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.timeline-item{
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.social-links{
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    margin-top:24px;
+}
+
+input{
+    width:100%;
+    padding:14px;
+    margin-bottom:12px;
+    border:1px solid #ccc;
+}
+
+footer{
+    padding:40px 0;
+    text-align:center;
+}
+
+@media(max-width:768px){
+
+    .grid-2,
+    .grid-3{
+        grid-template-columns:1fr;
+    }
+
+    .nav-wrapper{
+        flex-direction:column;
+        gap:16px;
+    }
+
+    .menu{
+        justify-content:center;
+    }
+}
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="container nav-wrapper">
+
+        <div class="logo">
+            Karen Soares
+        </div>
+
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#escolha">Qual livro combina com você?</a>
+            <a href="#livros">Livros</a>
+            <a href="#serie">Série Em Quadra</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#redes">Redes</a>
+            <a href="#newsletter">Newsletter</a>
+        </div>
+
+    </div>
+</nav>
+
+<!-- HOME -->
+
+<section id="home">
+    <div class="container">
+
+        <div class="placeholder hero-image"></div>
+
+        <br><br>
+
+        <h1>
+            Comédias românticas nacionais para quem ama filmes românticos dos anos 2000
+        </h1>
+
+        <p>
+            Texto provisório. Apresentação rápida da autora,
+            do universo dos livros e dos principais tropos.
+        </p>
+
+        <div class="cta-group">
+            <a href="#livros" class="btn">Conheça os livros</a>
+            <a href="#redes" class="btn">Redes sociais</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- QUAL LIVRO COMBINA -->
+
+<section id="escolha">
+    <div class="container">
+
+        <h2>Qual livro combina com você?</h2>
+
+        <p>
+            Escolha pela sua trope favorita.
+        </p>
+
+        <div class="grid grid-2">
+
+            <div class="card">
+                <h3>❤️ Fake Dating</h3>
+                <p>Alérgica a Casamento</p>
+                <p>As Mentiras de Nathan Davis</p>
+            </div>
+
+            <div class="card">
+                <h3>🔥 Enemies to Lovers</h3>
+                <p>Parte de Mim</p>
+            </div>
+
+            <div class="card">
+                <h3>☀️ Grumpy x Sunshine</h3>
+                <p>Parte de Mim</p>
+                <p>Cada Dia Que Te Amei</p>
+            </div>
+
+            <div class="card">
+                <h3>🏀 Romance Universitário</h3>
+                <p>Série Em Quadra</p>
+                <p>Parte de Mim</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- LIVROS -->
+
+<section id="livros">
+    <div class="container">
+
+        <h2>Livros</h2>
+
+        <div class="grid grid-2">
+
+            <article class="card">
+
+                <div class="placeholder book-cover"></div>
+
+                <br>
+
+                <h3>Alérgica a Casamento</h3>
+
+                <div class="tropes">
+                    <span class="tag">Fake Dating</span>
+                    <span class="tag">Estranhos para Amantes</span>
+                    <span class="tag">Cidade Pequena</span>
+                </div>
+
+                <p>
+                    Texto provisório da descrição do livro.
+                </p>
+
+                <a href="#" class="btn">Comprar na Amazon</a>
+
+            </article>
+
+            <article class="card">
+
+                <div class="placeholder book-cover"></div>
+
+                <br>
+
+                <h3>Parte de Mim</h3>
+
+                <div class="tropes">
+                    <span class="tag">Enemies to Lovers</span>
+                    <span class="tag">Hóquei</span>
+                    <span class="tag">Grumpy x Sunshine</span>
+                </div>
+
+                <p>
+                    Texto provisório da descrição do livro.
+                </p>
+
+                <a href="#" class="btn">Comprar na Amazon</a>
+
+            </article>
+
+            <article class="card">
+
+                <div class="placeholder book-cover"></div>
+
+                <br>
+
+                <h3>As Mentiras de Nathan Davis</h3>
+
+                <div class="tropes">
+                    <span class="tag">Fake Dating</span>
+                    <span class="tag">Basquete</span>
+                    <span class="tag">Grumpy x Sunshine</span>
+                </div>
+
+                <p>
+                    Texto provisório da descrição do livro.
+                </p>
+
+                <a href="#" class="btn">Comprar na Amazon</a>
+
+            </article>
+
+            <article class="card">
+
+                <div class="placeholder book-cover"></div>
+
+                <br>
+
+                <h3>Cada Dia Que Te Amei</h3>
+
+                <div class="tropes">
+                    <span class="tag">Friends to Lovers</span>
+                    <span class="tag">Slow Burn</span>
+                    <span class="tag">Found Family</span>
+                </div>
+
+                <p>
+                    Texto provisório da descrição do livro.
+                </p>
+
+                <a href="#" class="btn">Comprar na Amazon</a>
+
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- SÉRIE -->
+
+<section id="serie">
+    <div class="container">
+
+        <h2>Série Em Quadra</h2>
+
+        <p>
+            Conheça os livros da série.
+        </p>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <strong>Livro 1</strong>
+                <p>As Mentiras de Nathan Davis</p>
+            </div>
+
+            <div class="timeline-item">
+                <strong>Livro 2</strong>
+                <p>Cada Dia Que Te Amei</p>
+            </div>
+
+            <div class="timeline-item">
+                <strong>Próximos livros</strong>
+                <p>Em breve</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- SOBRE -->
+
+<section id="sobre">
+    <div class="container">
+
+        <div class="grid grid-2">
+
+            <div>
+                <div class="placeholder author-image"></div>
+            </div>
+
+            <div>
+
+                <h2>Sobre a Karen</h2>
+
+                <p>
+                    Texto provisório para biografia da autora.
+                </p>
+
+                <p>
+                    Espaço para história, trajetória,
+                    inspiração e posicionamento.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- REDES -->
+
+<section id="redes">
+    <div class="container">
+
+        <h2>Redes Sociais</h2>
+
+        <p>
+            Vídeos, bastidores, personagens,
+            novidades e lançamentos.
+        </p>
+
+        <div class="social-links">
+
+            <a href="#" class="btn">
+                TikTok
+            </a>
+
+            <a href="#" class="btn">
+                Instagram
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+
+<section id="newsletter">
+    <div class="container">
+
+        <h2>Entre para a lista de leitoras</h2>
+
+        <p>
+            Receba novidades, lançamentos e conteúdos exclusivos.
+        </p>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Seu nome"
+            >
+
+            <input
+                type="email"
+                placeholder="Seu e-mail"
+            >
+
+            <button class="btn" type="submit">
+                Quero participar
+            </button>
+
+        </form>
+
+    </div>
+</section>
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            Fluxo principal:
+            TikTok / Instagram → Site Oficial →
+            Amazon → Compra
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
